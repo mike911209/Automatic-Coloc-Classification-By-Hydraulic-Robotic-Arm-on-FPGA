@@ -1,0 +1,631 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan  5 19:37:11 2024
+# Process ID: 2368
+# Current directory: D:/Vivado/Final_project/Final_Project/Final_Project.runs/synth_1
+# Command line: vivado.exe -log Final.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Final.tcl
+# Log file: D:/Vivado/Final_project/Final_Project/Final_Project.runs/synth_1/Final.vds
+# Journal file: D:/Vivado/Final_project/Final_Project/Final_Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Final.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/Lab7/lab7_template/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xillinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top Final -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14068 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 778.785 ; gain = 233.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Final' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/keyboard_decoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [D:/Vivado/Final_project/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-2368-LAPTOP-605D38N6/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (1#1) [D:/Vivado/Final_project/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-2368-LAPTOP-605D38N6/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/onepulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (2#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/onepulse.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/keyboard_decoder.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (3#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/keyboard_decoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Servo_interface' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:84]
+INFO: [Synth 8-6157] synthesizing module 'speed_control' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'speed_control' (5#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:119]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (6#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:151]
+INFO: [Synth 8-6157] synthesizing module 'speed_control_motor4' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'speed_control_motor4' (7#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'Servo_interface' (8#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'motor_controller' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/Motor_controller.v:1]
+	Parameter STOP bound to: 2'b00 
+	Parameter CLOCKWISE bound to: 2'b01 
+	Parameter COUNTER_CLOCKWISE bound to: 2'b10 
+	Parameter NONE bound to: 2'b00 
+	Parameter RED bound to: 2'b01 
+	Parameter BLACK bound to: 2'b10 
+	Parameter BLUE bound to: 2'b11 
+	Parameter RED_DATA bound to: 8'b01000001 
+	Parameter BLACK_DATA bound to: 8'b01000010 
+	Parameter BLUE_DATA bound to: 8'b01000011 
+INFO: [Synth 8-6155] done synthesizing module 'motor_controller' (9#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/Motor_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/Receiver.v:1]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter div_sample bound to: 4 - type: integer 
+	Parameter div_counter bound to: 2604 - type: integer 
+	Parameter mid_sample bound to: 2 - type: integer 
+	Parameter div_bit bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/Receiver.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (10#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/Receiver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sonic_top' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'div' (11#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:113]
+INFO: [Synth 8-6157] synthesizing module 'TrigSignal' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'TrigSignal' (12#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:76]
+INFO: [Synth 8-6157] synthesizing module 'PosCounter' [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:17]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'PosCounter' (13#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'sonic_top' (14#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/sonic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Final' (15#1) [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/imports/Final_project/top.v:1]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[511]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[510]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[509]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[508]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[507]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[506]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[505]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[504]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[503]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[502]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[501]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[500]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[499]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[498]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[497]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[496]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[495]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[494]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[493]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[492]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[491]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[490]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[489]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[488]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[487]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[486]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[485]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[484]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[483]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[482]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[481]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[480]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[479]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[478]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[477]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[476]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[475]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[474]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[473]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[472]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[471]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[470]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[469]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[468]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[467]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[466]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[465]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[464]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[463]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[462]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[461]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[460]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[459]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[458]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[457]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[456]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[455]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[454]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[453]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[452]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[451]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[450]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[449]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[448]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[447]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[446]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[445]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[444]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[443]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[442]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[441]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[440]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[439]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[438]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[437]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[436]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[435]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[434]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[433]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[432]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[431]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[430]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[429]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[428]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[427]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[426]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[425]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[424]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[423]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[422]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[421]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[420]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[419]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[418]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[417]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[416]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[415]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[414]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[413]
+WARNING: [Synth 8-3331] design motor_controller has unconnected port key_down[412]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 851.648 ; gain = 306.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 851.648 ; gain = 306.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 851.648 ; gain = 306.371
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 851.648 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Finished Parsing XDC File [d:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Parsing XDC File [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/constrs_1/imports/Final_project/Final.xdc]
+Finished Parsing XDC File [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/constrs_1/imports/Final_project/Final.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/Final_project/Final_Project/Final_Project.srcs/constrs_1/imports/Final_project/Final.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Final_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Final_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 957.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 957.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 957.289 ; gain = 412.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 957.289 ; gain = 412.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  d:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  d:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  d:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  d:/Vivado/Final_project/Final_Project/Final_Project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for key_de/inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 957.289 ; gain = 412.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'motor_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'PosCounter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'motor_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                              001 |                               00
+                      S1 |                              010 |                               01
+                      S2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'PosCounter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 957.289 ; gain = 412.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 5     
+	   4 Input     21 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   4 Input     18 Bit        Muxes := 4     
+	   2 Input     17 Bit        Muxes := 3     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 16    
+	   8 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 54    
+	   4 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Final 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module onepulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module KeyboardDecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+Module speed_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     18 Bit        Muxes := 1     
+Module speed_control_motor4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     18 Bit        Muxes := 1     
+Module motor_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 5     
+	   4 Input     21 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 13    
+	   8 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+Module div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module TrigSignal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module PosCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     20 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 957.289 ; gain = 412.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 957.289 ; gain = 412.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 967.445 ; gain = 422.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 975.512 ; gain = 430.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |KeyboardCtrl_0 |     1|
+|2     |BUFG           |     1|
+|3     |CARRY4         |    54|
+|4     |LUT1           |     8|
+|5     |LUT2           |   124|
+|6     |LUT3           |    52|
+|7     |LUT4           |   108|
+|8     |LUT5           |    38|
+|9     |LUT6           |    81|
+|10    |FDCE           |   170|
+|11    |FDRE           |    94|
+|12    |IBUF           |     5|
+|13    |OBUF           |    15|
+|14    |OBUFT          |     6|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------+-----------------+------+
+|      |Instance     |Module           |Cells |
++------+-------------+-----------------+------+
+|1     |top          |                 |   768|
+|2     |  A          |Servo_interface  |   121|
+|3     |    compare1 |comparator       |     3|
+|4     |    compare2 |comparator_0     |     3|
+|5     |    compare3 |comparator_1     |     3|
+|6     |    compare4 |comparator_2     |     3|
+|7     |    count    |counter          |   109|
+|8     |  B          |motor_controller |   307|
+|9     |  C          |receiver         |    81|
+|10    |  D          |sonic_top        |   143|
+|11    |    clk1     |div              |    21|
+|12    |    u1       |TrigSignal       |    66|
+|13    |    u2       |PosCounter       |    56|
+|14    |  key_de     |KeyboardDecoder  |    79|
+|15    |    op       |onepulse         |     3|
++------+-------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 529 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 981.250 ; gain = 330.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 981.250 ; gain = 435.973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 993.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 993.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 993.324 ; gain = 693.777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 993.324 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/Final_project/Final_Project/Final_Project.runs/synth_1/Final.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Final_utilization_synth.rpt -pb Final_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 19:37:41 2024...

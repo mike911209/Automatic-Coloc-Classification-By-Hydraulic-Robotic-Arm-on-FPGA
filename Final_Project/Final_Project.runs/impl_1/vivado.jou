@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan  5 19:37:48 2024
+# Process ID: 18868
+# Current directory: D:/Vivado/Final_project/Final_Project/Final_Project.runs/impl_1
+# Command line: vivado.exe -log Final.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Final.tcl -notrace
+# Log file: D:/Vivado/Final_project/Final_Project/Final_Project.runs/impl_1/Final.vdi
+# Journal file: D:/Vivado/Final_project/Final_Project/Final_Project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Final.tcl -notrace
